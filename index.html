@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tuhy Blog — 首页</title>
+  <meta name="description" content="一个简洁的静态博客，记录日常与想法。" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Tuhy Blog</a>
+      <nav class="nav">
+        <a class="nav-link" href="index.html">首页</a>
+        <a class="nav-link" href="about.html">关于我</a>
+        <a class="nav-link" href="diary/index.html">日志</a>
+        <a class="nav-link" href="tech/index.html">技术</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>你好，欢迎来到我的小站</h1>
+      <p>这里是一个纯静态的个人博客，用来记录生活、学习与灵感。Hi, welcome to my small corner on the web.</p>
+      <div class="hero-actions">
+        <button class="button" type="button" data-target="logs-section" aria-controls="logs-section" aria-expanded="false">浏览日志</button>
+        <button class="button" type="button" data-target="about-section" aria-controls="about-section" aria-expanded="false">认识我</button>
+      </div>
+    </section>
+
+    <section class="section is-hidden" id="about-section">
+      <div class="section-header">
+        <h2>关于我</h2>
+        <a class="text-link" href="about.html">详细内容</a>
+      </div>
+      <p class="section-subtitle">喜欢记录与分享，也热爱慢生活与设计。这里是我的小小自我介绍。</p>
+    </section>
+
+    <section class="section is-hidden" id="logs-section">
+      <div class="section-header">
+        <h2>最新日志</h2>
+        <a class="text-link" href="diary/index.html">查看全部</a>
+      </div>
+      <div class="card-list">
+        <article class="card">
+          <div class="card-meta">2026-03-08</div>
+          <h3 class="card-title">
+            <a href="diary/2026-03-08-welcome.html">写在开端 · Welcome</a>
+          </h3>
+          <p class="card-desc">第一篇日记：关于为什么开始记录，以及我想分享的东西。</p>
+        </article>
+        <article class="card">
+          <div class="card-meta">2026-03-07</div>
+          <h3 class="card-title">
+            <a href="diary/2026-03-07-hong-kong-ticket.html">去香港取票的一天</a>
+          </h3>
+          <p class="card-desc">为孙燕姿演唱会取票、吃了富贵雪糕，堵车与刷卡失败也没影响好心情。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <h2>技术文章</h2>
+        <a class="text-link" href="tech/index.html">查看全部</a>
+      </div>
+      <div class="card-list">
+        <article class="card">
+          <div class="card-meta">2026-03-08</div>
+          <h3 class="card-title">
+            <a href="tech/claude-code-website.html">通过claude code编写网站教程</a>
+          </h3>
+          <p class="card-desc">从目录结构到页面与样式，一步步用 Claude Code 搭建纯静态网站。</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Tuhy Blog. Built with pure HTML/CSS.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

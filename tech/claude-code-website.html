@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>通过claude code编写网站教程 — Tuhy Blog</title>
+  <meta name="description" content="使用 Claude Code 搭建纯静态网站的实操教程。" />
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="../index.html">Tuhy Blog</a>
+      <nav class="nav">
+        <a class="nav-link" href="../index.html">首页</a>
+        <a class="nav-link" href="../about.html">关于我</a>
+        <a class="nav-link" href="../diary/index.html">日志</a>
+        <a class="nav-link" href="index.html">技术</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="diary">
+      <header class="diary-header">
+        <h1>通过claude code编写网站教程</h1>
+        <div class="diary-meta">2026-03-08 · Tech · 中文</div>
+      </header>
+
+      <div class="diary-content">
+        <p>这篇文章记录我用 Claude Code 搭建纯静态博客的过程，目标是：不引入构建工具，直接用 HTML / CSS / JS 生成可部署到 GitHub Pages 的站点，并保持结构清晰、便于后续维护。</p>
+
+        <h2>1. 明确需求与目录结构</h2>
+        <p>首先把需求说清楚：需要首页、关于页、日志列表页、日志详情页，并准备一个技术文章区。然后让 Claude Code 创建基础目录：</p>
+        <ul>
+          <li><strong>/assets</strong>：统一样式与脚本</li>
+          <li><strong>/diary</strong>：日志列表与日志详情</li>
+          <li><strong>/tech</strong>：技术文章列表与详情</li>
+        </ul>
+        <p>结构确定后，后续新增页面就可以沿用统一模板，减少重复劳动。</p>
+
+        <h2>2. 搭建统一页面骨架</h2>
+        <p>用同一套 header / footer 结构，保证全站视觉一致。导航包含“首页 / 关于我 / 日志 / 技术”，并将导航改为左侧固定栏，便于在内容较长时快速跳转。</p>
+
+        <h2>3. 先做首页，再做列表页</h2>
+        <p>首页使用“最新日志 + 技术文章”两块区域，便于展示更新状态。日志列表页与技术列表页都采用卡片式布局，信息包含：日期、标题、摘要、链接。</p>
+
+        <h2>4. 写第一篇日志与第一篇技术文</h2>
+        <p>日志内容从真实经历扩展，强调细节与情绪；技术文则记录过程、步骤与关键文件，让之后复用更方便。每篇文章都有独立页面，便于分享链接。</p>
+
+        <h2>5. 统一样式与响应式</h2>
+        <p>样式集中在 <code>assets/styles.css</code> 中，重点包括：</p>
+        <ul>
+          <li>卡片布局与阴影，提升层次感</li>
+          <li>字体栈兼容中文与英文</li>
+          <li>小屏幕自动切换为顶部导航</li>
+        </ul>
+
+        <h2>6. 持续更新的方式</h2>
+        <p>后续只需要：</p>
+        <ol>
+          <li>新增一篇 HTML 文章页面</li>
+          <li>在对应列表页新增一条卡片</li>
+          <li>如需首页展示，补充首页列表</li>
+        </ol>
+        <p>这种方式简单直观，不依赖构建环境，也特别适合新手或轻量级站点。</p>
+
+        <h2>7. 部署到 GitHub Pages</h2>
+        <p>完成后把目录推到 GitHub 仓库，在 Pages 设置中选择 main 分支的根目录即可发布。</p>
+
+        <p>以上就是我用 Claude Code 搭建纯静态站点的流程，后续会继续补充模板与写作规范，保持内容更新。</p>
+      </div>
+
+      <div class="diary-actions">
+        <a class="text-link" href="index.html">← 返回技术列表</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Tuhy Blog.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/main.js"></script>
+</body>
+</html>
